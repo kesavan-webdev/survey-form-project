@@ -11,6 +11,32 @@
 <body>
   <h1 class="title" id="title">freeCodeCamp Survey Form</h1>
   <p id="description" class="description">Thankyou for taking the time to help us improve the platform</p>
+  <form action="" class="survey-form" id="survey-form">
+    <label for="name" class="name-label">name <input type="text" name="name" id="name" class="name"
+        placeholder="enter your name" required></label>
+    <label for="email" class="email-label">email <input type="email" name="email" id="email" class="email"
+        placeholder="enter your email" required></label>
+    <label for="number" class="number-label">number
+      <input type="number" name="number" id="number" class="number" min="18" max="80" placeholder="age"></label>
+    <label for="dropdown">experience <select name="dropdown" id="dropdown" class="dropdown">
+        <option value="fresher">fresher</option>
+        <option value="experience">experience</option>
+      </select></label>
+    <label for="job-type">
+      <input type="radio" name="job-type" id="jobtype" class="jobtype">full-time</label>
+    <label for="jobtype"> <input type="radio" name="job-type" id="jobtype" class="jobtype">part-time
+    </label>
+
+    <label for="html"><input type="checkbox" name="html" id="html" value="html"> html</label>
+    <label for="css"><input type="checkbox" name="css" id="css" value="css"> css</label>
+    <label for="javascript"><input type="checkbox" name="javascript" id="javascript" value="javascript">
+      javascript</label>
+    <label for="react"><input type="checkbox" name="react" id="react" value="react"> react</label>
+    <label for="nodejs"><input type="checkbox" name="nodejs" id="nodejs" value="nodejs"> nodejs</label>
+
+    <textarea name="comments" id="comments" cols="30" rows="5" placeholder="leave your comments here"></textarea>
+    <button id="submit" class="submit">submit</button>
+  </form>
 </body>
 
 </html>
